@@ -3,7 +3,7 @@ import Layout from '@theme/Layout';
 import Gallery from '../components/Gallery';
 import styles from './gallery-page.module.css';
 
-const images = Array.from({length: 8}, (_, i) => `/images/reliefs/${i + 1}.jpg`);
+const images = Array.from({length: 9}, (_, i) => `/images/reliefs/${i + 1}.jpg`);
 
 export default function ReliefsPage(): ReactNode {
   return (
