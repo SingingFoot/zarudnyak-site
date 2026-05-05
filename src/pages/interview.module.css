@@ -1,0 +1,83 @@
+.article {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 4rem 2rem 6rem;
+}
+
+.header {
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #e0dbd4;
+  padding-bottom: 1.5rem;
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  margin: 0 0 0.4rem;
+  color: #111;
+}
+
+.byline {
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #888;
+  margin: 0;
+}
+
+.intro {
+  margin-bottom: 3rem;
+}
+
+.intro p {
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #444;
+  border-left: 2px solid #c8c0b4;
+  padding-left: 1.4rem;
+  margin: 0;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+}
+
+.qa {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.question {
+  font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #222;
+  margin: 0;
+}
+
+.answer {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: #333;
+  margin: 0;
+}
+
+.footer {
+  margin-top: 4rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid #e0dbd4;
+}
+
+.footer p {
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  color: #999;
+  margin: 0;
+  text-transform: uppercase;
+}

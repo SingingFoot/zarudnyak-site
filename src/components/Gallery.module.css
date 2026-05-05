@@ -1,0 +1,31 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 10px;
+  padding: 0;
+}
+
+.cell {
+  all: unset;
+  cursor: zoom-in;
+  overflow: hidden;
+  background: #f0ede8;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease, opacity 0.35s ease;
+  opacity: 0.9;
+}
+
+.cell:hover img {
+  transform: scale(1.04);
+  opacity: 1;
+}

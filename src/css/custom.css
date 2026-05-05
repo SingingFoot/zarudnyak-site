@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  --font-serif: 'EB Garamond', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+
+  --ifm-color-primary: #2c2c2c;
+  --ifm-color-primary-dark: #1a1a1a;
+  --ifm-color-primary-darker: #111;
+  --ifm-color-primary-darkest: #000;
+  --ifm-color-primary-light: #555;
+  --ifm-color-primary-lighter: #888;
+  --ifm-color-primary-lightest: #bbb;
+
+  --ifm-background-color: #faf9f7;
+  --ifm-font-family-base: var(--font-sans);
+  --ifm-font-size-base: 16px;
+  --ifm-line-height-base: 1.75;
+
+  --ifm-navbar-background-color: #faf9f7;
+  --ifm-navbar-shadow: none;
+  --ifm-navbar-height: 56px;
+  --ifm-navbar-padding-horizontal: 2rem;
+
+  --ifm-footer-background-color: #f2ede7;
+  --ifm-footer-color: #888;
+
+  --ifm-heading-font-family: var(--font-serif);
+  --ifm-heading-font-weight: 400;
+  --ifm-heading-color: #111;
+
+  --ifm-link-color: #2c2c2c;
+  --ifm-link-hover-color: #111;
+
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* homepage palette — light mode */
+  --home-bg: #f7f5f2;
+  --home-title: #7a746c;
+  --home-meta: #b0a89e;
+  --home-divider: #ddd8d0;
+  --home-card-bg: #f7f5f2;
+  --home-card-label: #4a4540;
+  --home-card-hover-bg: #2c2822;
+  --home-card-hover-text: #f7f5f2;
+  --home-card-hover-meta: #a09890;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #d4cfc8;
+  --ifm-color-primary-dark: #bbb;
+  --ifm-color-primary-darker: #aaa;
+  --ifm-color-primary-darkest: #999;
+  --ifm-color-primary-light: #e0dbd4;
+  --ifm-color-primary-lighter: #eee;
+  --ifm-color-primary-lightest: #fff;
+  --ifm-background-color: #141414;
+  --ifm-navbar-background-color: #141414;
+  --ifm-footer-background-color: #1a1a1a;
+  --ifm-heading-color: #eee;
+  --ifm-link-color: #ccc;
+  --ifm-link-hover-color: #fff;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  /* homepage palette — dark mode */
+  --home-bg: #181614;
+  --home-title: #c8bfb4;
+  --home-meta: #6e665e;
+  --home-divider: #2e2a26;
+  --home-card-bg: #1e1b18;
+  --home-card-label: #c0b8ae;
+  --home-card-hover-bg: #f0ece6;
+  --home-card-hover-text: #1e1b18;
+  --home-card-hover-meta: #6a6058;
+}
+
+/* ── Global ─────────────────────────────────────────────────── */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--ifm-background-color);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+}
+
+/* ── Navbar ─────────────────────────────────────────────────── */
+
+.navbar {
+  border-bottom: 1px solid #e0dbd4;
+  box-shadow: none;
+}
+
+[data-theme='dark'] .navbar {
+  border-bottom-color: #2a2a2a;
+}
+
+.navbar__brand {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+}
+
+.navbar__title {
+  color: #111 !important;
+}
+
+[data-theme='dark'] .navbar__title {
+  color: #eee !important;
+}
+
+.navbar__logo {
+  display: none;
+}
+
+.navbar__item {
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.navbar__link {
+  color: #666 !important;
+  transition: color 0.15s ease;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+  color: #111 !important;
+  background: none !important;
+}
+
+[data-theme='dark'] .navbar__link {
+  color: #999 !important;
+}
+
+[data-theme='dark'] .navbar__link:hover,
+[data-theme='dark'] .navbar__link--active {
+  color: #eee !important;
+}
+
+/* ── Footer ─────────────────────────────────────────────────── */
+
+.footer {
+  padding: 2rem;
+  border-top: 1px solid #e0dbd4;
+}
+
+.footer__copyright {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #aaa;
+  text-align: center;
+}
+
+.footer__links {
+  display: none;
+}
+
+/* ── Scrollbar ──────────────────────────────────────────────── */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
