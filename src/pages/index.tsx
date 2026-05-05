@@ -4,7 +4,7 @@ import Layout from '@theme/Layout';
 import styles from './index.module.css';
 
 const categories = [
-  {label: 'Graphics', to: '/graphics', count: 33},
+  {label: 'Graphics', to: '/graphics', count: 36},
   {label: 'Photos', to: '/photos', count: 2},
   {label: 'Reliefs', to: '/reliefs', count: 8},
   {label: 'Watercolors', to: '/watercolors', count: 8},
