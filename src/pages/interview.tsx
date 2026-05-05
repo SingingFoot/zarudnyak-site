@@ -10,7 +10,7 @@ export default function InterviewPage(): ReactNode {
         <div className={styles.lead}>
           <div className={styles.portrait}>
             <img
-              src="/images/photos/4.png"
+              src="/images/photos/5.png"
               alt="Сергій Зарудняк"
               className={styles.portraitImg}
             />
