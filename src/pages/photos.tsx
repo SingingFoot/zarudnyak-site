@@ -3,7 +3,11 @@ import Layout from '@theme/Layout';
 import Gallery from '../components/Gallery';
 import styles from './gallery-page.module.css';
 
-const images = [1, 3].map((n) => `/images/photos/${n}.jpg`);
+const images = [
+  '/images/photos/1.jpg',
+  '/images/photos/3.jpg',
+  '/images/photos/4.png',
+];
 
 export default function PhotosPage(): ReactNode {
   return (
