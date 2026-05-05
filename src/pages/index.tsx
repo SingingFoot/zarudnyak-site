@@ -4,8 +4,8 @@ import Layout from '@theme/Layout';
 import styles from './index.module.css';
 
 const categories = [
-  {label: 'Graphics', to: '/graphics', count: 57},
-  {label: 'Photos', to: '/photos', count: 14},
+  {label: 'Graphics', to: '/graphics', count: 62},
+  {label: 'Photos', to: '/photos', count: 17},
   {label: 'Reliefs', to: '/reliefs', count: 11},
   {label: 'Watercolors', to: '/watercolors', count: 15},
 ];
