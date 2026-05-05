@@ -14,6 +14,10 @@ const images = [
   '/images/photos/11.jpg',
   '/images/photos/12.jpg',
   '/images/photos/13.jpg',
+  '/images/photos/14.jpg',
+  '/images/photos/15.jpg',
+  '/images/photos/16.jpg',
+  '/images/photos/17.jpg',
 ];
 
 export default function PhotosPage(): ReactNode {
