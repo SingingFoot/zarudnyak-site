@@ -49,13 +49,21 @@
 }
 
 .trackText {
-  font-size: 0.9rem;
-  line-height: 1.7;
-  color: #777;
   margin: 0 0 1.2rem;
 }
 
-[data-theme='dark'] .trackText {
+.trackText p {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: #666;
+  margin: 0 0 0.8rem;
+}
+
+.trackText p:last-child {
+  margin-bottom: 0;
+}
+
+[data-theme='dark'] .trackText p {
   color: #999;
 }
 
