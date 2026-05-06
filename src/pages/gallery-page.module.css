@@ -23,6 +23,7 @@
 .description {
   column-count: 2;
   column-gap: 3.5rem;
+  column-fill: balance;
   margin-bottom: 3rem;
   padding-bottom: 2.5rem;
   border-bottom: 1px solid #e0dbd4;
@@ -33,7 +34,6 @@
   line-height: 1.85;
   color: #555;
   margin: 0 0 1rem;
-  break-inside: avoid;
 }
 
 .description p:last-child {
