@@ -46,6 +46,7 @@ const config: Config = {
         {to: '/photos', label: 'Photos', position: 'left'},
         {to: '/reliefs', label: 'Reliefs', position: 'left'},
         {to: '/watercolors', label: 'Watercolors', position: 'left'},
+        {to: '/music', label: 'Music', position: 'left'},
         {to: '/interview', label: 'Interview', position: 'left'},
       ],
     },
