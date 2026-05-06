@@ -1,5 +1,5 @@
 .article {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 4rem 2rem 6rem;
 }
@@ -8,7 +8,7 @@
 
 .lead {
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 480px 1fr;
   gap: 3.5rem;
   align-items: stretch;
   margin-bottom: 4rem;
@@ -43,14 +43,73 @@
   padding-bottom: 1.2rem;
 }
 
+.titleRow {
+  display: flex;
+  align-items: baseline;
+  gap: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
 .title {
   font-family: var(--font-serif);
   font-size: 2.6rem;
   font-weight: 400;
   letter-spacing: 0.06em;
-  margin: 0 0 0.4rem;
+  margin: 0;
   color: var(--ifm-heading-color);
   line-height: 1.15;
+}
+
+.switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  flex-shrink: 0;
+}
+
+.switchBtn {
+  all: unset;
+  cursor: pointer;
+  font-size: 0.68rem;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #bbb;
+  transition: color 0.15s ease;
+  padding: 0.15rem 0.1rem;
+  line-height: 1;
+}
+
+.switchBtn:hover {
+  color: #555;
+}
+
+.switchBtnActive {
+  color: #222;
+}
+
+[data-theme='dark'] .switchBtn {
+  color: #555;
+}
+
+[data-theme='dark'] .switchBtn:hover {
+  color: #bbb;
+}
+
+[data-theme='dark'] .switchBtnActive {
+  color: #eee;
+}
+
+.switchDivider {
+  font-size: 0.6rem;
+  color: #ccc;
+  line-height: 1;
+  user-select: none;
+}
+
+[data-theme='dark'] .switchDivider {
+  color: #444;
 }
 
 .byline {
