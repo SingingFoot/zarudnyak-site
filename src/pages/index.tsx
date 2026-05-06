@@ -4,10 +4,12 @@ import Layout from '@theme/Layout';
 import styles from './index.module.css';
 
 const categories = [
-  {label: 'Graphics', to: '/graphics', count: 62},
-  {label: 'Photos', to: '/photos', count: 17},
-  {label: 'Reliefs', to: '/reliefs', count: 11},
-  {label: 'Watercolors', to: '/watercolors', count: 15},
+  {label: 'Graphics', to: '/graphics', sub: '62 works'},
+  {label: 'Photos', to: '/photos', sub: '19 works'},
+  {label: 'Reliefs', to: '/reliefs', sub: '11 works'},
+  {label: 'Watercolors', to: '/watercolors', sub: '15 works'},
+  {label: 'Music', to: '/music', sub: '6 tracks'},
+  {label: 'Interview', to: '/interview', sub: '2006'},
 ];
 
 export default function Home(): ReactNode {
@@ -31,10 +33,10 @@ export default function Home(): ReactNode {
         </header>
 
         <nav className={styles.grid}>
-          {categories.map(({label, to, count}) => (
+          {categories.map(({label, to, sub}) => (
             <Link key={to} to={to} className={styles.card}>
               <span className={styles.cardLabel}>{label}</span>
-              <span className={styles.cardCount}>{count} works</span>
+              <span className={styles.cardCount}>{sub}</span>
             </Link>
           ))}
         </nav>
