@@ -21,7 +21,7 @@ const images = [
   '/images/photos/18.jpg',
   '/images/photos/19.jpg',
   '/images/photos/20.jpg',
-  '/images/photos/24.png',
+  '/images/photos/23.jpg',
   '/images/photos/25.jpg',
 ];
 
