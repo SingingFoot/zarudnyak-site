@@ -10,7 +10,7 @@ const categories = [
   {label: 'Reliefs', to: '/reliefs', sub: '11 works'},
   {label: 'Watercolors', to: '/watercolors', sub: '15 works'},
   {label: 'Music', to: '/music', sub: '6 tracks'},
-  {label: 'Interview', to: '/writings/interview', sub: '2006'},
+  {label: 'Writings', to: '/writings', sub: ''},
 ];
 
 export default function Home(): ReactNode {
