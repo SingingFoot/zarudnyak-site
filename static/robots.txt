@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://zarudnyak.art/sitemap.xml
+Sitemap: https://zarudnyak.netlify.app/sitemap.xml

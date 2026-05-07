@@ -9,7 +9,7 @@ const config: Config = {
 
   future: {v4: true},
 
-  url: 'https://zarudnyak.art',
+  url: 'https://zarudnyak.netlify.app',
   baseUrl: '/',
 
   organizationName: 'zarudnyak',
@@ -99,13 +99,13 @@ const config: Config = {
     },
     {
       tagName: 'meta',
-      attributes: {property: 'og:url', content: 'https://zarudnyak.art'},
+      attributes: {property: 'og:url', content: 'https://zarudnyak.netlify.app'},
     },
     {
       tagName: 'meta',
       attributes: {
         property: 'og:image',
-        content: 'https://zarudnyak.art/images/photos/3.jpg',
+        content: 'https://zarudnyak.netlify.app/images/photos/3.jpg',
       },
     },
     // JSON-LD structured data — Person + LocalBusiness
@@ -123,8 +123,8 @@ const config: Config = {
             'Sergiy Zarudnyak',
             'Sergei Zarudnyak',
           ],
-          url: 'https://zarudnyak.art',
-          image: 'https://zarudnyak.art/images/photos/3.jpg',
+          url: 'https://zarudnyak.netlify.app',
+          image: 'https://zarudnyak.netlify.app/images/photos/3.jpg',
           jobTitle: 'Artist',
           address: {
             '@type': 'PostalAddress',
@@ -140,14 +140,14 @@ const config: Config = {
             'Music',
             'Dance',
           ],
-          sameAs: ['https://zarudnyak.art'],
+          sameAs: ['https://zarudnyak.netlify.app'],
         },
         {
           '@context': 'https://schema.org',
           '@type': 'LocalBusiness',
           name: 'Школа Танців Зарудняк',
           alternateName: ['Школа Танцев Зарудняк', 'Zarudnyak Dance School'],
-          url: 'https://zarudnyak.art',
+          url: 'https://zarudnyak.netlify.app',
           address: {
             '@type': 'PostalAddress',
             addressLocality: 'Запоріжжя',

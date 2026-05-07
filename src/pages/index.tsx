@@ -26,7 +26,7 @@ export default function Home(): ReactNode {
           content="Сергій Зарудняк, Сергей Зарудняк, Зарудняк, Школа Танців, Школа Танцев, Запоріжжя, Запорожье, художник Запоріжжя, художник Запорожье, Serhiy Zarudnyak, Sergiy Zarudnyak, Sergei Zarudnyak, Zarudnyak artist, Zaporizhzhia artist, dance school Zaporizhzhia, графіка, рельєфи, акварелі"
         />
         <meta name="author" content="Сергій Зарудняк" />
-        <link rel="canonical" href="https://zarudnyak.art/" />
+        <link rel="canonical" href="https://zarudnyak.netlify.app/" />
         <meta name="geo.region" content="UA-23" />
         <meta name="geo.placename" content="Запоріжжя" />
         <meta name="geo.position" content="47.8388;35.1396" />
