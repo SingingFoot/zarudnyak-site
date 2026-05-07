@@ -165,6 +165,43 @@
   border-bottom-color: #2a2620;
 }
 
+/* ── Video block ────────────────────────────────────────── */
+.videoBlock {
+  margin: 2rem 0;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #0a0a0a;
+}
+
+.videoPlayer {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+}
+
+.videoCaption {
+  padding: 1rem 1.2rem;
+  background: #f7f4f0;
+  border-top: 1px solid #e0dbd4;
+}
+
+[data-theme='dark'] .videoCaption {
+  background: #1a1814;
+  border-top-color: #2a2620;
+}
+
+.videoCaption p {
+  font-size: 0.82rem;
+  line-height: 1.75;
+  color: #777;
+  margin: 0;
+}
+
+[data-theme='dark'] .videoCaption p {
+  color: #888;
+}
+
 /* ── Responsive ─────────────────────────────────────────── */
 @media (max-width: 768px) {
   .page {
