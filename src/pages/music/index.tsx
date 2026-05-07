@@ -19,6 +19,23 @@ const REST_PARAGRAPHS = [
   'Positioning folklore and canonical literary works as a breath of fresh air in the exhausted era of postmodernism, Shkola Tanziv uses art and memory as tools for navigating life\'s moral crossroads, always with a transcendent plane in mind.',
 ];
 
+const DISCOGRAPHY: {year: string; title: string; note: string}[] = [
+  {year: '1989', title: 'Volshebnaya Flegma', note: 'a collection of live concert numbers'},
+  {year: '1991', title: 'Kholodnaya Zakuska', note: 'double album'},
+  {year: '1993', title: 'A Zori Zdes\' Tikhenkie', note: ''},
+  {year: '1994', title: 'WOLK', note: ''},
+  {year: '1995', title: 'Songs on Poems by Brodsky', note: ''},
+];
+
+const LINEUP_2003: {name: string; role: string}[] = [
+  {name: 'Serhiy Kozub', role: 'guitar, vocals, arrangements'},
+  {name: 'Vitaly Zhukov', role: 'drums'},
+  {name: 'Denis Vasetsky', role: 'trombone'},
+  {name: 'Andryukha', role: 'trumpet'},
+  {name: 'Kolya Chekalsky', role: 'bass'},
+  {name: 'Tolik Sobakar', role: 'violin'},
+];
+
 function Sidebar() {
   const {pathname} = useLocation();
   return (
@@ -76,6 +93,52 @@ export default function MusicPage(): ReactNode {
               {REST_PARAGRAPHS.map((para, i) => (
                 <p key={i}>{para}</p>
               ))}
+            </div>
+
+            {/* History section — translated from the original Russian chronicle */}
+            <div className={styles.trackText}>
+              <h3>History</h3>
+
+              <p>
+                The ensemble was founded in October 1989. On the 16th of that month the collective
+                held its first rehearsal — the date now regarded as the group's birthday. During the
+                years of active work (1989–1996) the band recorded several albums and concert
+                programmes, which found devoted audiences in select circles.
+              </p>
+
+              <p>Discography of the first period:</p>
+              <ul>
+                {DISCOGRAPHY.map(({year, title, note}) => (
+                  <li key={year}>
+                    <em>{title}</em> ({year}){note ? ` — ${note}` : ''}
+                  </li>
+                ))}
+              </ul>
+              <p>…as well as a number of archival live recordings.</p>
+
+              <p>
+                Serhiy Zarudnyak is the author of the majority of the works in the Shkola Tanziv
+                catalogue and the founding spirit of the group. In 1996 the ensemble gave its last
+                concert and, for a range of objective and personal reasons, ceased activity by 2002.
+                Yet Zarudnyak, together with Oleg Shynkarenko, Olha Volodina, Nastya Shylo, and
+                Tatyana Levina, continued to rehearse and record songs in a home studio throughout
+                that period.
+              </p>
+
+              <p>
+                On 7 December 2002, a decision was made to revive Shkola Tanziv with a new lineup.
+                In 2003 the ensemble performed three times at the Zaporizhzhia nightclub{' '}
+                <em>Tryasyna</em> with the programme <em>Hello for Tanya</em>.
+              </p>
+
+              <p>Lineup in 2003:</p>
+              <ul>
+                {LINEUP_2003.map(({name, role}) => (
+                  <li key={name}>
+                    {name} — {role}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
