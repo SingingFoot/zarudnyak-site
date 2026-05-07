@@ -32,12 +32,38 @@ const TRACKLIST: {n: number; title: string; time: string}[] = [
   {n: 24, title: 'Our Ensemble',                  time: '54:30'},
 ];
 
+// Split tracklist into two columns of 12 each
+const COL1 = TRACKLIST.slice(0, 12);
+const COL2 = TRACKLIST.slice(12);
+
 const LINEUP: {name: string; role: string}[] = [
   {name: 'Serhiy Zarudnyak',     role: 'Vocals, Guitars'},
   {name: 'Oleksandr Myalnitsya', role: 'Guitars, Vocals'},
   {name: 'Serhiy Kozub',         role: 'Bass, Vocals, Guitars'},
   {name: 'Serhiy Vasepov',       role: 'Drums'},
 ];
+
+function TrackColumn({items}: {items: typeof TRACKLIST}) {
+  return (
+    <table style={{width: '100%', borderCollapse: 'collapse'}}>
+      <tbody>
+        {items.map(({n, title, time}) => (
+          <tr key={n} style={{borderBottom: '1px solid #f0ece6'}}>
+            <td style={{padding: '0.35rem 0.5rem 0.35rem 0', fontSize: '0.82rem', color: '#bbb', width: '1.8rem', textAlign: 'right'}}>
+              {n}.
+            </td>
+            <td style={{padding: '0.35rem 0.8rem 0.35rem 0.5rem', fontSize: '0.86rem', color: '#555'}}>
+              {title}
+            </td>
+            <td style={{padding: '0.35rem 0', fontSize: '0.8rem', color: '#aaa', textAlign: 'right', fontVariantNumeric: 'tabular-nums', whiteSpace: 'nowrap'}}>
+              {time}
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
 
 function Sidebar() {
   const {pathname} = useLocation();
@@ -81,61 +107,40 @@ export default function ColdSnackPage(): ReactNode {
           </header>
 
           <div className={styles.track}>
-            <div className={styles.trackText}>
-              <p>
-                <em>Cold Snack</em> (Holodna Zakuska), 1989. A full album recording by Shkola Tanziv.
-              </p>
+
+            {/* Description + photo side by side */}
+            <div style={{display: 'flex', gap: '2rem', alignItems: 'flex-start', marginBottom: '1.5rem'}}>
+              <div style={{flex: 1}}>
+                <div className={styles.trackText}>
+                  <p>
+                    <em>Cold Snack</em> (Holodna Zakuska), 1989. A full album recording by Shkola Tanziv.
+                  </p>
+                </div>
+                <audio className={styles.player} controls preload="none">
+                  <source src="/audio/cold-snack.mp3" type="audio/mpeg" />
+                </audio>
+              </div>
+              <div style={{flexShrink: 0}}>
+                <img
+                  src="/images/photos/1989.jpg"
+                  alt="Shkola Tanziv, 1989"
+                  style={{
+                    width: '220px',
+                    borderRadius: '3px',
+                    display: 'block',
+                    objectFit: 'cover',
+                  }}
+                />
+              </div>
             </div>
 
-            <audio className={styles.player} controls preload="none">
-              <source src="/audio/cold-snack.mp3" type="audio/mpeg" />
-            </audio>
-
-            {/* Tracklist */}
+            {/* Tracklist — 2 columns */}
             <div className={styles.trackText} style={{marginTop: '2rem'}}>
               <h3 style={{marginBottom: '0.8rem'}}>Tracklist</h3>
-              <table style={{width: '100%', borderCollapse: 'collapse'}}>
-                <tbody>
-                  {TRACKLIST.map(({n, title, time}) => (
-                    <tr
-                      key={n}
-                      style={{borderBottom: '1px solid #f0ece6'}}
-                    >
-                      <td
-                        style={{
-                          padding: '0.35rem 0.6rem 0.35rem 0',
-                          fontSize: '0.85rem',
-                          color: '#999',
-                          width: '2rem',
-                          textAlign: 'right',
-                        }}
-                      >
-                        {n}.
-                      </td>
-                      <td
-                        style={{
-                          padding: '0.35rem 1rem 0.35rem 0.6rem',
-                          fontSize: '0.88rem',
-                          color: '#555',
-                        }}
-                      >
-                        {title}
-                      </td>
-                      <td
-                        style={{
-                          padding: '0.35rem 0',
-                          fontSize: '0.82rem',
-                          color: '#aaa',
-                          textAlign: 'right',
-                          fontVariantNumeric: 'tabular-nums',
-                        }}
-                      >
-                        {time}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+              <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0 2rem'}}>
+                <TrackColumn items={COL1} />
+                <TrackColumn items={COL2} />
+              </div>
             </div>
 
             {/* Line-up */}
@@ -143,15 +148,13 @@ export default function ColdSnackPage(): ReactNode {
               <h3 style={{marginBottom: '0.8rem'}}>Line-up</h3>
               <ul style={{paddingLeft: '1.2rem', margin: 0}}>
                 {LINEUP.map(({name, role}) => (
-                  <li
-                    key={name}
-                    style={{fontSize: '0.88rem', color: '#666', lineHeight: 1.9}}
-                  >
+                  <li key={name} style={{fontSize: '0.88rem', color: '#666', lineHeight: 1.9}}>
                     <strong>{name}</strong> — {role}
                   </li>
                 ))}
               </ul>
             </div>
+
           </div>
         </div>
       </div>
