@@ -1,1 +1,2 @@
 static/videos/shkola-tanziv.mp4 filter=lfs diff=lfs merge=lfs -text
+static/audio/cold-snack.mp3 filter=lfs diff=lfs merge=lfs -text

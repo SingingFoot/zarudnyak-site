@@ -7,6 +7,12 @@ export interface Track {
 
 export const tracks: Track[] = [
   {
+    slug: 'cold-snack',
+    title: 'Cold Snack',
+    description: 'Cold Snack (Holodna Zakuska), 1989. A full album recording by Shkola Tanziv.',
+    src: '/audio/cold-snack.mp3',
+  },
+  {
     slug: 'dream',
     title: 'A Dream Within a Dream',
     description: "This song is a musical interpretation of Edgar Allan Poe's evocative poem \"A Dream Within a Dream,\" featuring the vocals of Olha Volodina and the guitar accompaniment of Serhiy Zarudnyak. As the founder of the musical group \"Shkola Tantsiv\" and a recognized composer, Zarudnyak brings his distinct artistic vision to this collaboration.\n\nThe composition embodies several key elements of Zarudnyak's creative philosophy. Much like his visual art, Zarudnyak's music employs an economy of artistic means to achieve a polysemy of meaning — the sparse arrangement of voice and guitar allows the weight of Poe's existential questions to emerge from the darkness. The song explores the tragic essence of the human condition: the fleeting nature of time and reality. Zarudnyak considers tragicomedy his favorite genre because it reflects how life is always a mixture of the sad and the funny, a theme central to Poe's poem.\n\nThe choice of Poe's text aligns with Zarudnyak's belief that an artist must have a transcendent plane in mind. By questioning whether life is a \"dream within a dream,\" the song touches on the mystical experience that Zarudnyak strives to create in all his works. Zarudnyak also views traditional and folklore motifs as a breath of fresh air in the exhausted era of postmodernism — this adaptation of a classic literary work enriches a traditional structure with modern emotional depth.",
