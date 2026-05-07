@@ -6,7 +6,7 @@ import styles from './index.module.css';
 
 const categories = [
   {label: 'Graphics', to: '/graphics', sub: '62 works'},
-  {label: 'Photos', to: '/photos', sub: '19 works'},
+  {label: 'Photos', to: '/photos', sub: '21 works'},
   {label: 'Reliefs', to: '/reliefs', sub: '11 works'},
   {label: 'Watercolors', to: '/watercolors', sub: '15 works'},
   {label: 'Music', to: '/music', sub: '6 tracks'},
