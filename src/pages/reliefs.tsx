@@ -5,7 +5,7 @@ import styles from './gallery-page.module.css';
 
 const images = [
   '1a','2a','3a','4a','5a','6a','7a','8a',
-  '9','11','12',
+  '91','11','12',
 ].map((n) => `/images/reliefs/${n}.jpg`);
 
 export default function ReliefsPage(): ReactNode {
