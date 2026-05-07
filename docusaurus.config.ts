@@ -47,7 +47,7 @@ const config: Config = {
         {to: '/reliefs', label: 'Reliefs', position: 'left'},
         {to: '/watercolors', label: 'Watercolors', position: 'left'},
         {to: '/music', label: 'Music', position: 'left'},
-        {to: '/interview', label: 'Interview', position: 'left'},
+        {to: '/writings', label: 'Writings', position: 'left'},
       ],
     },
     footer: {

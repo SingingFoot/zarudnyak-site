@@ -1,0 +1,182 @@
+/* ── Page wrapper ───────────────────────────────────────── */
+.page {
+  display: flex;
+  min-height: calc(100vh - var(--ifm-navbar-height));
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 3rem 2rem 6rem;
+  gap: 3rem;
+}
+
+/* ── Left sidebar ───────────────────────────────────────── */
+.sidebar {
+  flex: 0 0 180px;
+  position: sticky;
+  top: calc(var(--ifm-navbar-height) + 2rem);
+  align-self: flex-start;
+}
+
+.sidebarTitle {
+  font-family: var(--font-serif);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ifm-color-primary-darkest);
+  margin: 0 0 1rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid #e0dbd4;
+}
+
+[data-theme='dark'] .sidebarTitle {
+  border-bottom-color: #2a2620;
+}
+
+.sidebarNav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.sidebarNav li {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebarLink {
+  display: block;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  color: #666;
+  text-decoration: none;
+  padding: 0.35rem 0.5rem;
+  border-radius: 3px;
+  transition: background 0.15s, color 0.15s;
+}
+
+.sidebarLink:hover {
+  color: var(--ifm-color-primary-darkest);
+  background: rgba(0, 0, 0, 0.04);
+  text-decoration: none;
+}
+
+.sidebarLink.active {
+  color: var(--ifm-color-primary-darkest);
+  font-weight: 600;
+  background: rgba(0, 0, 0, 0.06);
+}
+
+[data-theme='dark'] .sidebarLink {
+  color: #999;
+}
+
+[data-theme='dark'] .sidebarLink:hover,
+[data-theme='dark'] .sidebarLink.active {
+  color: #e0dbd4;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+/* ── Content area ───────────────────────────────────────── */
+.content {
+  flex: 1;
+  min-width: 0;
+}
+
+/* ── Poems ──────────────────────────────────────────────── */
+.poemsHeader {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid #e0dbd4;
+}
+
+[data-theme='dark'] .poemsHeader {
+  border-bottom-color: #2a2620;
+}
+
+.poemsHeader h1 {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ifm-color-primary-darkest);
+  margin: 0;
+}
+
+.poem {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: #333;
+  font-style: italic;
+}
+
+[data-theme='dark'] .poem {
+  color: #ccc;
+}
+
+.stanza {
+  margin: 0 0 1.8rem;
+}
+
+.stanza:last-child {
+  margin-bottom: 0;
+}
+
+.stanza p {
+  margin: 0;
+  line-height: 1.9;
+}
+
+.description p {
+  font-size: 0.9rem;
+  line-height: 1.85;
+  color: #666;
+  margin: 0 0 0.9rem;
+}
+
+.description p:last-child {
+  margin-bottom: 0;
+}
+
+[data-theme='dark'] .description p {
+  color: #999;
+}
+
+.poemDivider {
+  text-align: center;
+  color: #bbb;
+  font-style: normal;
+  letter-spacing: 0.4em;
+  font-size: 0.85rem;
+  margin: 2.8rem 0;
+  user-select: none;
+}
+
+[data-theme='dark'] .poemDivider {
+  color: #555;
+}
+
+/* ── Responsive ─────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .page {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1rem 4rem;
+  }
+
+  .sidebar {
+    flex: none;
+    position: static;
+    width: 100%;
+  }
+
+  .sidebarNav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+}

@@ -1,6 +1,7 @@
 import type {ReactNode} from 'react';
 import {useState} from 'react';
 import Layout from '@theme/Layout';
+import WritingLayout from './_WritingLayout';
 import styles from './interview.module.css';
 
 type Lang = 'ua' | 'en';
@@ -92,8 +93,7 @@ export default function InterviewPage(): ReactNode {
 
   return (
     <Layout title="Interview — Serhiy Zarudnyak" description="Interview with Serhiy Zarudnyak">
-      <article className={styles.article}>
-
+      <WritingLayout>
         <div className={styles.lead}>
           <div className={styles.portrait}>
             <img
@@ -140,8 +140,7 @@ export default function InterviewPage(): ReactNode {
         <footer className={styles.footer}>
           <p>{c.footer}</p>
         </footer>
-
-      </article>
+      </WritingLayout>
     </Layout>
   );
 }
