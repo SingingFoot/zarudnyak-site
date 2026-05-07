@@ -5,6 +5,7 @@ import styles from './gallery-page.module.css';
 
 const images = [
   '/images/photos/1.jpg',
+  '/images/photos/4.jpeg',
   '/images/photos/6.jpg',
   '/images/photos/7.jpg',
   '/images/photos/8.jpg',
