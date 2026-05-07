@@ -108,6 +108,34 @@ const config: Config = {
         content: 'https://zarudnyak.netlify.app/images/photos/3.jpg',
       },
     },
+    // Twitter card
+    {
+      tagName: 'meta',
+      attributes: {name: 'twitter:card', content: 'summary_large_image'},
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'twitter:title',
+        content: 'Сергій Зарудняк | Сергей Зарудняк | Serhiy Zarudnyak — Artist',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'twitter:description',
+        content:
+          'Сергій Зарудняк — художник із Запоріжжя. Графіка, рельєфи, акварелі, Школа Танців. ' +
+          'Serhiy Zarudnyak — artist from Zaporizhzhia, Ukraine.',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'twitter:image',
+        content: 'https://zarudnyak.netlify.app/images/photos/3.jpg',
+      },
+    },
     // JSON-LD structured data — Person + LocalBusiness
     {
       tagName: 'script',

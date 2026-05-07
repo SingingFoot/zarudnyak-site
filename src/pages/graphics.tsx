@@ -7,7 +7,10 @@ const images = Array.from({length: 62}, (_, i) => `/images/graphics/${i + 1}.jpg
 
 export default function GraphicsPage(): ReactNode {
   return (
-    <Layout title="Graphics" description="Graphic works by Serhiy Zarudnyak">
+    <Layout
+      title="Графіка | Graphics — Сергій Зарудняк / Сергей Зарудняк"
+      description="Графічні роботи Сергія Зарудняка, Запоріжжя. Graphics by Serhiy Zarudnyak — Запоріжжя / Запорожье."
+    >
       <div className={styles.page}>
         <header className={styles.header}>
           <h1>Graphics</h1>

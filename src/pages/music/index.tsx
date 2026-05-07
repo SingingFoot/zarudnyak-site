@@ -2,6 +2,7 @@ import type {ReactNode} from 'react';
 import Link from '@docusaurus/Link';
 import {useLocation} from '@docusaurus/router';
 import Layout from '@theme/Layout';
+import Head from '@docusaurus/Head';
 import {tracks} from './_tracks';
 import styles from './music.module.css';
 
@@ -63,7 +64,17 @@ function Sidebar() {
 
 export default function MusicPage(): ReactNode {
   return (
-    <Layout title="Music" description="Music by Serhiy Zarudnyak">
+    <Layout
+      title="Школа Танців | Школа Танцев | Shkola Tanziv — Сергій Зарудняк"
+      description="Школа Танців (Школа Танцев) — музичний гурт Сергія Зарудняка із Запоріжжя. Shkola Tanziv — music by Serhiy Zarudnyak, Zaporizhzhia."
+    >
+      <Head>
+        <meta
+          name="keywords"
+          content="Школа Танців, Школа Танцев, Школа Танців Зарудняк, Школа Танцев Зарудняк, Shkola Tanziv, Shkola Tantsev, Сергій Зарудняк музика, Сергей Зарудняк музыка, Запоріжжя музика, Запорожье музыка, Ukrainian indie music, Zaporizhzhia band"
+        />
+        <link rel="canonical" href="https://zarudnyak.netlify.app/music/" />
+      </Head>
       <div className={styles.page}>
         <Sidebar />
         <div className={styles.content}>

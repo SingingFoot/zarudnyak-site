@@ -31,7 +31,10 @@ const images = [
 
 export default function PhotosPage(): ReactNode {
   return (
-    <Layout title="Photos" description="Photography by Serhiy Zarudnyak">
+    <Layout
+      title="Фото | Photos — Сергій Зарудняк / Сергей Зарудняк"
+      description="Фотографії Сергія Зарудняка, Запоріжжя. Photography by Serhiy Zarudnyak — Запоріжжя / Запорожье."
+    >
       <div className={styles.page}>
         <header className={styles.header}>
           <h1>Photos</h1>

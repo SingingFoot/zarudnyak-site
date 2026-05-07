@@ -1,6 +1,7 @@
 import type {ReactNode} from 'react';
 import {useState} from 'react';
 import Layout from '@theme/Layout';
+import Head from '@docusaurus/Head';
 import WritingLayout from './_WritingLayout';
 import styles from './interview.module.css';
 
@@ -92,7 +93,17 @@ export default function InterviewPage(): ReactNode {
   const c = content[lang];
 
   return (
-    <Layout title="Interview — Serhiy Zarudnyak" description="Interview with Serhiy Zarudnyak">
+    <Layout
+      title="Інтерв'ю — Сергій Зарудняк | Interview — Serhiy Zarudnyak"
+      description="Розмова про життя і мистецтво з Сергієм Зарудняком — художником із Запоріжжя, засновником Школи Танців. Interview with Serhiy Zarudnyak, artist from Zaporizhzhia, founder of Shkola Tanziv."
+    >
+      <Head>
+        <meta
+          name="keywords"
+          content="Сергій Зарудняк інтерв'ю, Сергей Зарудняк интервью, художник Запоріжжя, художник Запорожье, Школа Танців, Школа Танцев, мистецтво Запоріжжя, Zarudnyak interview, Zaporizhzhia artist"
+        />
+        <link rel="canonical" href="https://zarudnyak.netlify.app/writings/interview/" />
+      </Head>
       <WritingLayout>
         <div className={styles.lead}>
           <div className={styles.portrait}>

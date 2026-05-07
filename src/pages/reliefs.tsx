@@ -10,7 +10,10 @@ const images = [
 
 export default function ReliefsPage(): ReactNode {
   return (
-    <Layout title="Reliefs" description="Relief works by Serhiy Zarudnyak">
+    <Layout
+      title="Рельєфи | Reliefs — Сергій Зарудняк / Сергей Зарудняк"
+      description="Рельєфні роботи Сергія Зарудняка, Запоріжжя. Reliefs by Serhiy Zarudnyak — Запоріжжя / Запорожье."
+    >
       <div className={styles.page}>
         <header className={styles.header}>
           <h1>Reliefs</h1>

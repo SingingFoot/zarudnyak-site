@@ -7,7 +7,10 @@ const images = Array.from({length: 15}, (_, i) => `/images/watercolors/${i + 1}.
 
 export default function WatercolorsPage(): ReactNode {
   return (
-    <Layout title="Watercolors" description="Watercolor paintings by Serhiy Zarudnyak">
+    <Layout
+      title="Акварелі | Watercolors — Сергій Зарудняк / Сергей Зарудняк"
+      description="Акварельні роботи Сергія Зарудняка, Запоріжжя. Watercolors by Serhiy Zarudnyak — Запоріжжя / Запорожье."
+    >
       <div className={styles.page}>
         <header className={styles.header}>
           <h1>Watercolors</h1>

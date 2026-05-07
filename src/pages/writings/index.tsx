@@ -13,7 +13,10 @@ const DESCRIPTION = [
 
 export default function WritingsPage(): ReactNode {
   return (
-    <Layout title="Writings" description="Writings by Serhiy Zarudnyak">
+    <Layout
+      title="Тексти | Writings — Сергій Зарудняк / Сергей Зарудняк"
+      description="Інтерв'ю та вірші Сергія Зарудняка. Writings and interview by Serhiy Zarudnyak, artist from Zaporizhzhia — Запоріжжя / Запорожье."
+    >
       <WritingLayout>
         <header className={styles.poemsHeader}>
           <h1>Writings</h1>
