@@ -108,31 +108,32 @@ export default function ColdSnackPage(): ReactNode {
 
           <div className={styles.track}>
 
-            {/* Description + photo side by side */}
-            <div style={{display: 'flex', gap: '2rem', alignItems: 'flex-start', marginBottom: '1.5rem'}}>
-              <div style={{flex: 1}}>
-                <div className={styles.trackText}>
-                  <p>
-                    <em>Cold Snack</em> (Holodna Zakuska), 1989. A full album recording by Shkola Tanziv.
-                  </p>
-                </div>
-                <audio className={styles.player} controls preload="none">
-                  <source src="/audio/cold-snack.mp3" type="audio/mpeg" />
-                </audio>
-              </div>
-              <div style={{flexShrink: 0}}>
-                <img
-                  src="/images/photos/1989.jpg"
-                  alt="Shkola Tanziv, 1989"
-                  style={{
-                    width: '220px',
-                    borderRadius: '3px',
-                    display: 'block',
-                    objectFit: 'cover',
-                  }}
-                />
-              </div>
+            {/* Description */}
+            <div className={styles.trackText}>
+              <p>
+                <em>Cold Snack</em> (Holodna Zakuska), 1989. A full album recording by Shkola Tanziv.
+              </p>
             </div>
+
+            {/* Photo */}
+            <img
+              src="/images/photos/1989.jpg"
+              alt="Shkola Tanziv, 1989"
+              style={{
+                width: '100%',
+                maxHeight: '420px',
+                objectFit: 'cover',
+                objectPosition: 'center top',
+                borderRadius: '3px',
+                display: 'block',
+                marginBottom: '1.2rem',
+              }}
+            />
+
+            {/* Audio player */}
+            <audio className={styles.player} controls preload="none">
+              <source src="/audio/cold-snack.mp3" type="audio/mpeg" />
+            </audio>
 
             {/* Tracklist — 2 columns */}
             <div className={styles.trackText} style={{marginTop: '2rem'}}>
