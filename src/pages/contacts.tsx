@@ -66,17 +66,19 @@ export default function ContactsPage(): ReactNode {
             </span>
           </a>
 
-          {/* Email — placeholder */}
-          <span className={`${styles.card} ${styles.cardDisabled}`}>
+          {/* Email */}
+          <a
+            className={styles.card}
+            href="mailto:zarudnyaksergei@gmail.com"
+          >
             <span className={styles.iconWrap}>
               <EmailIcon />
             </span>
             <span className={styles.cardBody}>
               <span className={styles.cardLabel}>Email</span>
-              <span className={styles.cardName}>Coming soon</span>
-              <span className={styles.cardNote}>to be added</span>
+              <span className={styles.cardName}>zarudnyaksergei@gmail.com</span>
             </span>
-          </span>
+          </a>
         </div>
       </main>
     </Layout>
