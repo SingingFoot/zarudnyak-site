@@ -230,6 +230,7 @@ const config: Config = {
         {to: '/watercolors', label: 'Watercolors', position: 'left'},
         {to: '/music', label: 'Music', position: 'left'},
         {to: '/writings', label: 'Writings', position: 'left'},
+        {to: '/contacts', label: 'Contacts', position: 'left'},
       ],
     },
     footer: {
