@@ -66,4 +66,28 @@ export const tracks: Track[] = [
     description: "The musical composition \"Taiga\" is an Indie track by Serhiy Zarudnyak, featuring vocals and guitar by Oleh Shynkarenko.\n\nThe taiga — the vast boreal forest that stretches across the northern latitudes of Eurasia — is one of the great images of Russian and Ukrainian cultural imagination: a space of exile and freedom simultaneously, a wilderness that swallows both fugitives and pilgrims without distinction. The composition draws on this double character, using the landscape as an emotional interior rather than a geographical setting.\n\nThe track is marked by a quality of immensity and silence — the kind of silence that is not absence but presence, thick with what cannot be named. In keeping with Zarudnyak's creative philosophy of achieving polysemy through economy of means, the arrangement is deliberately sparse, allowing the weight of the central image to accumulate undisturbed. The taiga here is less a place than a state: one of vast solitude that is neither loneliness nor peace, but something prior to both.",
     src: '/audio/taiga.wav',
   },
+  {
+    slug: 'oblaka',
+    title: 'Clouds',
+    description: "The musical composition \"Clouds\" (Oblaka) is an Indie track by Serhiy Zarudnyak, featuring vocals and guitar by Oleh Shynkarenko.\n\nClouds occupy a peculiar place in the human imagination — they are always present, always moving, yet impossible to grasp. They are the sky's way of demonstrating that impermanence is not a flaw but a form. The composition takes this quality as its emotional grammar, tracing the arc of something that passes through the field of vision and memory without pausing, without explaining itself.\n\nIn Zarudnyak's characteristic manner, the arrangement refuses to fill the space with sound. What surrounds the melody is as deliberate as the melody itself: the gaps, the silences, the moments where voice and guitar simply allow the air to exist. The clouds of the title are not a symbol of melancholy but of movement — the kind of unhurried passage that makes the sky seem almost generous in its indifference.",
+    src: '/audio/oblaka.wav',
+  },
+  {
+    slug: 'ostrov',
+    title: 'Island',
+    description: "The musical composition \"Island\" (Ostrov) is an Indie track by Serhiy Zarudnyak, featuring vocals and guitar by Oleh Shynkarenko.\n\nAn island is a paradox: a place of absolute definition — its borders are drawn by water, by nature itself — and yet a place that is never entirely known, never fully mapped from within. The composition inhabits this paradox, tracing the contours of a self-contained world that exists both as sanctuary and as enclosure.\n\nThe track explores the particular quality of island consciousness: the awareness that the horizon is always water, that distance is always sea. In Zarudnyak's hands this becomes a meditation not on isolation but on completeness — the sense that what is here is sufficient, that the boundary is not a wall but a definition. The sparse instrumentation enacts this principle directly: nothing is added that is not already necessary. The island, like the song, contains exactly what it needs.",
+    src: '/audio/ostrov.wav',
+  },
+  {
+    slug: 'piramidy',
+    title: 'Pyramids',
+    description: "The musical composition \"Pyramids\" (Piramidy) is an Indie track by Serhiy Zarudnyak, featuring vocals and guitar by Oleh Shynkarenko.\n\nThe pyramid is the oldest human argument against time — a structure built precisely to outlast the civilization that raised it. Yet what survives is the form alone: the culture, the belief, the human urgency that gave the form its meaning has long since dissolved into sand. The composition approaches this paradox not with grandeur but with the quiet unease of someone standing before a monument whose scale dwarfs understanding.\n\nZarudnyak's arrangement is characteristically lean, refusing the kind of orchestral weight that the subject might seem to invite. The restraint is the point: against the eternal, it is the small human voice that is most exposed. The pyramids of the title are not celebrated but observed — ancient, patient, and entirely indifferent to whether they are understood.",
+    src: '/audio/piramidy.wav',
+  },
+  {
+    slug: 'strela',
+    title: 'Arrow',
+    description: "The musical composition \"Arrow\" (Strela) is an Indie track by Serhiy Zarudnyak, featuring vocals and guitar by Oleh Shynkarenko.\n\nThe arrow is the definitive image of direction — it exists only in its trajectory, only in the relationship between origin and destination. Remove either point and the arrow becomes meaningless: it is pure intention, pure velocity, a line drawn in the air between where something was and where it is going. The composition takes this as its structural principle, moving with a sense of inevitability that is neither hurried nor casual.\n\nIn keeping with Zarudnyak's creative philosophy, the track achieves its effect through economy rather than elaboration. The arrow of the title is not a weapon but a vector — the kind of deliberate, irreversible gesture that commits entirely to its direction once released. There is something both liberating and final in that commitment, and the song holds both qualities in suspension without resolving the tension between them.",
+    src: '/audio/strela.wav',
+  },
 ];
